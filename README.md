@@ -1,2 +1,14 @@
-# chris-erg-v3-teams-workflow
-Prototype: ERG V3 Teams Workflow - Deployed via VibeSharing
+# ERG V3 Teams Workflow
+
+Deployed via [VibeSharing](https://vibesharing.app).
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Deploy
+
+Push to main branch - changes go live automatically.
