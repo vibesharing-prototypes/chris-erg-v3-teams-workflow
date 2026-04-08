@@ -1,21 +1,17 @@
-import type { Metadata } from "next";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "ERG — Microsoft Teams Simulation",
-  description: "Enterprise Risk Governance workflow simulated in Microsoft Teams",
+export const metadata = {
+  title: "ERG V3 Teams Workflow",
+  description: "Prototype deployed via VibeSharing",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="antialiased">
-        {children}
-      </body>
+      <head>
+        <script src="https://vibesharing.app/vs-sdk.js" defer></script>
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
